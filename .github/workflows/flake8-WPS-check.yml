@@ -1,5 +1,7 @@
 name: flake8-WPS-check
+
 on: [push]
+
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
