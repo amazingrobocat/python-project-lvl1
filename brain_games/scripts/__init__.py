@@ -1,1 +1,1 @@
-"""Brain games scripts directory."""
+"""Scripts directory."""
