@@ -17,13 +17,13 @@ def brain_even_module():
 
     user_name = prompt.string('May I have your name? ')
 
-    print('Hello, {0}!\n{1}'.format(user_name, rules))
+    print('Hello, {UN}!\n{R}'.format(UN=user_name, R=rules))
 
     answer_count = 0
     while int(answer_count < 3):
         random_num = random.randint(start_integer, stop_integer)
 
-        print('Question: {0}'.format(random_num))
+        print('Question: {RN}'.format(RN=random_num))
 
         user_answer = prompt.string('Your answer: ')
 
@@ -33,8 +33,12 @@ def brain_even_module():
             print('Correct!')
             answer_count += 1
         else:
-            print("'{UA}' is wrong answer ;(. Correct answer was '{RA}'.".format(UA=user_answer, RA=right_answer))
-            print("Let's try again, {UN}!".format(UN=user_name))
+            print(
+                "'{0}' is wrong answer ;(. Correct answer was '{1}'.\n".format(
+                    user_answer, right_answer,
+                ),
+            )
+            print("Let's try again, {0}!".format(user_name))
             break
     else:
         print('Congratulations, {UN}!'.format(UN=user_name))
