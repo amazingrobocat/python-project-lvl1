@@ -21,4 +21,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
+<<<<<<< HEAD
 brain-calc = "brain_games.scripts.brain_calc:main"
+=======
+>>>>>>> d1030c156dec2811e580d205d0c11730cf21438e

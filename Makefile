@@ -16,8 +16,11 @@ publish:
 package-install:
 	python3 -m pip install --user --force-reinstall dist/*.whl
 
+<<<<<<< HEAD
 package-venv-install:
 	python3 -m pip install --force-reinstall dist/*.whl
 
+=======
+>>>>>>> d1030c156dec2811e580d205d0c11730cf21438e
 lint:
 	poetry run flake8 brain_games

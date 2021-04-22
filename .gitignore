@@ -2,5 +2,9 @@
 .vscode
 __pycache__
 dist/
+<<<<<<< HEAD
 *.pyc
 .idea
+=======
+*.pyc
+>>>>>>> d1030c156dec2811e580d205d0c11730cf21438e
