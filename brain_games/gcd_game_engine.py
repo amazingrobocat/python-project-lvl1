@@ -1,7 +1,7 @@
 """Brain-calc game engine."""
 
 import prompt
-from brain_games.games import calc
+from brain_games.games import gcd
 
 # Не должен быть импорт отдельной игры каждый раз!
 
@@ -12,13 +12,12 @@ def game_progression():
 
     user_name = prompt.string('May I have your name? ')
 
-    print('Hello, {name}!\n{R}'.format(name=user_name, R=calc.RULES))
+    print('Hello, {name}!\n{R}'.format(name=user_name, R=gcd.RULES))
     # Мешает модульности.
 
     game_score = 0
     while int(game_score < 3):
-        question, correct_answer = calc.brain_calc_module()
-        # Мешает модульности.
+        question, correct_answer = gcd.gcd_game_module()  # Мешает модульности.
 
         print(question)
         user_answer = prompt.string('Your answer: ')
