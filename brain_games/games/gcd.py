@@ -2,9 +2,9 @@
 import random
 
 INITIAL_FIRST_NUM = 1
-LAST_FIRST_NUM = 100
+LAST_FIRST_NUM = 50
 INITIAL_SECOND_NUM = 1
-LAST_SECOND_NUM = 100
+LAST_SECOND_NUM = 20
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
