@@ -14,3 +14,6 @@
 
 ### Brain-progression game demonstration
 [![asciicast](https://asciinema.org/a/GCmlTB0MlLvzHzVfy1jxiNA7K.svg)](https://asciinema.org/a/GCmlTB0MlLvzHzVfy1jxiNA7K)
+
+### Brain-prime game demonstration
+[![asciicast](https://asciinema.org/a/u6MlIJArqyyfoRtGtlsMZEomy.svg)](https://asciinema.org/a/u6MlIJArqyyfoRtGtlsMZEomy)
