@@ -38,5 +38,6 @@ def progression_game_module():
     hidden_element = random.randint(0, (length - 1))
     correct_answer = progression[hidden_element]
     progression[hidden_element] = '..'
-    question = ' '.join([str(element) for element in progression])
+    progression_hidden = ' '.join([str(element) for element in progression])
+    question = 'Question: {0}'.format(progression_hidden)
     return question, correct_answer

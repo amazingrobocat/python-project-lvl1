@@ -2,8 +2,8 @@
 
 import random
 
-min_number = 1
-max_number = 100
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
