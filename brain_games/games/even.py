@@ -2,42 +2,23 @@
 
 import random
 
-import prompt
-
-start_integer = 1
-stop_integer = 100
-rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+min_number = 1
+max_number = 100
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def brain_even_module():
-    """Brain-even game."""
-    print('Welcome to the Brain Games!')
+def even_game_module():
+    """Generate a game round.
 
-    user_name = prompt.string('May I have your name? ')
+    Generate random number that may or may not be even.
+    Ask the user a question for a round of the game.
+    Calculate the correct answer.
 
-    print('Hello, {name}!\n{R}'.format(name=user_name, R=rules))
-
-    answer_count = 0
-    while int(answer_count < 3):
-        random_num = random.randint(start_integer, stop_integer)
-
-        print('Question: {rand}'.format(rand=random_num))
-
-        user_answer = prompt.string('Your answer: ')
-
-        correct_answer = 'yes' if random_num % 2 == 0 else 'no'
-
-        if user_answer == correct_answer:
-            print('Correct!')
-            answer_count += 1
-        else:
-            print(
-                "'{user_a}' is wrong answer ;(.".format(user_a=user_answer),
-                " Correct answer was '{corr_a}'.\n".format(
-                    corr_a=correct_answer,
-                ),
-            )
-            print("Let's try again, {name}!".format(name=user_name))
-            break
-    else:
-        print('Congratulations, {name}!'.format(name=user_name))
+    Returns:
+        - question for the user
+        - correct answer value
+    """
+    random_number = random.randint(min_number, max_number)
+    question = 'Question: {0}'.format(random_number)
+    correct_answer = 'yes' if random_number % 2 == 0 else 'no'
+    return question, correct_answer
