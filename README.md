@@ -4,10 +4,10 @@
 [![Linter check](https://github.com/amazingrobocat/python-project-lvl1/actions/workflows/flake8-WPS-check.yml/badge.svg)](https://github.com/amazingrobocat/python-project-lvl1/actions/workflows/flake8-WPS-check.yml)
 
 ### Brain-even game demonstration
-[![asciicast](https://asciinema.org/a/TNfYYrLhigYqaa4NS8AzdRMgA.svg)](https://asciinema.org/a/TNfYYrLhigYqaa4NS8AzdRMgA)
+[![asciicast](https://asciinema.org/a/o2yMGPWcKUGyU0kDUQvWt7Xqt.svg)](https://asciinema.org/a/o2yMGPWcKUGyU0kDUQvWt7Xqt)
 
 ### Brain-calc game demonstration
-[![asciicast](https://asciinema.org/a/UoBmqtIV9aNvPpwiwaAyhPJCH.svg)](https://asciinema.org/a/UoBmqtIV9aNvPpwiwaAyhPJCH)
+[![asciicast](https://asciinema.org/a/ljAh4rVhnUoLfTTGkScquiJ5M.svg)](https://asciinema.org/a/ljAh4rVhnUoLfTTGkScquiJ5M)
 
 ### Brain-gcd game demonstration
 [![asciicast](https://asciinema.org/a/nTCkkuoMh4frIJRRo7cKmO3RI.svg)](https://asciinema.org/a/nTCkkuoMh4frIJRRo7cKmO3RI)
