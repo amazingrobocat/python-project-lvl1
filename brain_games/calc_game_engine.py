@@ -17,7 +17,7 @@ def game_progression():
 
     game_score = 0
     while int(game_score < 3):
-        question, correct_answer = calc.brain_calc_module()
+        question, correct_answer = calc.calc_game_module()
         # Мешает модульности.
 
         print(question)
