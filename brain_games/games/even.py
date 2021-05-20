@@ -18,7 +18,7 @@ def even_game_module():
         - question for the user
         - correct answer value
     """
-    random_number = random.randint(min_number, max_number)
+    random_number = random.randint(MIN_NUMBER, MAX_NUMBER)
     question = 'Question: {0}'.format(random_number)
     correct_answer = 'yes' if random_number % 2 == 0 else 'no'
     return question, correct_answer
