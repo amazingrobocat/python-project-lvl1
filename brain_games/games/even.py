@@ -7,7 +7,7 @@ MAX_NUMBER = 100
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def even_game_module():
+def launch_game_round():
     """Generate a game round.
 
     Generate random number that may or may not be even.

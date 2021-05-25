@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
 """Brain-even script."""
-from brain_games import even_game_engine
+from brain_games.even_game_engine import game_progression
+from brain_games.games import even
 
 
 def main():
     """Start brain-even game."""
-    even_game_engine.game_progression()
+    game_progression(even)
 
 
 if __name__ == '__main__':

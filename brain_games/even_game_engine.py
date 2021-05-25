@@ -1,22 +1,26 @@
 """Brain-even game engine."""
 
 import prompt
-from brain_games.games import even
 
 # Не должен быть импорт отдельной игры каждый раз!
 
 
-def game_progression():
-    """Game engine function."""
+def game_progression(game):
+    """Launch game progression.
+
+    Args:
+        game: Provides access to functions which calculate
+            values for the round of the game
+    """
     print('Welcome to the Brain Games!')
 
     user_name = prompt.string('May I have your name? ')
 
-    print('Hello, {name}!\n{R}'.format(name=user_name, R=even.RULES))
+    print('Hello, {name}!\n{R}'.format(name=user_name, R=game.RULES))
     # Мешает модульности.
 
     for _ in range(3):
-        question, correct_answer = even.even_game_module()
+        question, correct_answer = game.launch_game_round()
         # Мешает модульности.
 
         print(question)
