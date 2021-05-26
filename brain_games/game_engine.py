@@ -3,7 +3,7 @@
 import prompt
 
 
-def game_progression(game):
+def launch_game(game):
     """Launch game progression.
 
     Args:
