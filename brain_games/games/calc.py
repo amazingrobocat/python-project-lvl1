@@ -23,7 +23,7 @@ def generate_expression_parts():
     return first_num, second_num, expression, operators
 
 
-def calc_game_module():
+def launch_game_round():
     """Ask the user a question for a round of the game.
 
     Ask a question to the user.

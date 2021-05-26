@@ -2,8 +2,6 @@
 
 import prompt
 
-# Не должен быть импорт отдельной игры каждый раз!
-
 
 def game_progression(game):
     """Launch game progression.
@@ -17,11 +15,9 @@ def game_progression(game):
     user_name = prompt.string('May I have your name? ')
 
     print('Hello, {name}!\n{R}'.format(name=user_name, R=game.RULES))
-    # Мешает модульности.
 
     for _ in range(3):
         question, correct_answer = game.launch_game_round()
-        # Мешает модульности.
 
         print(question)
         user_answer = prompt.string('Your answer: ')

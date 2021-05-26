@@ -8,7 +8,7 @@ NUMBER_MIN = 2
 NUMBER_MAX = 200
 
 
-def prime_game_module():
+def launch_game_round():
     """Generate random number that may or may not be prime.
 
     Returns:

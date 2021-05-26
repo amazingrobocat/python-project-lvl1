@@ -36,7 +36,7 @@ def gcd(first_number, second_number):
     return first_number
 
 
-def gcd_game_module():
+def launch_game_round():
     """Ask the user a question for a round of the game.
 
     Returns:

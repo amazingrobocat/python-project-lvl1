@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """Brain-even script."""
-from brain_games.even_game_engine import game_progression
+from brain_games.game_engine import game_progression
 from brain_games.games import even
 
 

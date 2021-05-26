@@ -27,7 +27,7 @@ def generate_progression_parts():
     return progression, length
 
 
-def progression_game_module():
+def launch_game_round():
     """Generate arithmetic progression with random hidden element.
 
     Returns:
