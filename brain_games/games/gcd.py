@@ -1,10 +1,10 @@
 """Brain-Greatest common divisor game module."""
 import random
 
-INITIAL_FIRST_NUM = 1
-LAST_FIRST_NUM = 45
-INITIAL_SECOND_NUM = 1
-LAST_SECOND_NUM = 15
+FIRST_MIN_NUMBER = 1
+FIRST_MAX_NUMBER = 45
+SECOND_MIN_NUMBER = 1
+SECOND_MAX_NUMBER = 15
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
@@ -35,9 +35,9 @@ def launch_game_round():
         - question for the user
         - correct answer value
     """
-    first_generated_number = random.randint(INITIAL_FIRST_NUM, LAST_FIRST_NUM)
+    first_generated_number = random.randint(FIRST_MIN_NUMBER, FIRST_MAX_NUMBER)
     second_generated_number = random.randint(
-        INITIAL_SECOND_NUM, LAST_SECOND_NUM,
+        SECOND_MIN_NUMBER, SECOND_MAX_NUMBER,
     )
     question = '{0} {1}'.format(first_generated_number, second_generated_number)
     correct_answer = gcd(first_generated_number, second_generated_number)

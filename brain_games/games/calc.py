@@ -2,10 +2,10 @@
 import operator
 import random
 
-INITIAL_FIRST_NUM = 0
-LAST_FIRST_NUM = 20
-INITIAL_SECOND_NUM = 1
-LAST_SECOND_NUM = 10
+FIRST_MIN_NUMBER = 0
+FIRST_MAX_NUMBER = 20
+SECOND_MIN_NUMBER = 1
+SECOND_MAX_NUMBER = 10
 RULES = 'What is the result of the expression?'
 
 
@@ -21,8 +21,8 @@ def launch_game_round():
         - correct answer value
     """
     operators = {'+': operator.add, '-': operator.sub, '*': operator.mul}
-    first_num = random.randint(INITIAL_FIRST_NUM, LAST_FIRST_NUM)
-    second_num = random.randint(INITIAL_SECOND_NUM, LAST_SECOND_NUM)
+    first_num = random.randint(FIRST_MIN_NUMBER, FIRST_MAX_NUMBER)
+    second_num = random.randint(SECOND_MIN_NUMBER, SECOND_MAX_NUMBER)
     expression = random.choice(list(operators.keys()))
     question = '{0} {1} {2}'.format(
         first_num, expression, second_num,

@@ -4,12 +4,12 @@ import random
 
 RULES = 'What number is missing in the progression?'
 
-NUMBER_MIN = 1
-NUMBER_MAX = 15
-STEP_MIN = 2
-STEP_MAX = 5
-LENGTH_MIN = 5
-LENGTH_MAX = 10
+MIN_NUMBER = 1
+MAX_NUMBER = 15
+MIN_STEP = 2
+MAX_STEP = 5
+MIN_LENGTH = 5
+MAX_LENGTH = 10
 
 
 def generate_progression(start, last, step):
@@ -38,9 +38,9 @@ def launch_game_round():
         question for the user(str)
         correct answer value(int)
     """
-    first_element = random.randint(NUMBER_MIN, NUMBER_MAX)
-    step_element = random.randint(STEP_MIN, STEP_MAX)
-    length_element = random.randint(LENGTH_MIN, LENGTH_MAX)
+    first_element = random.randint(MIN_NUMBER, MAX_NUMBER)
+    step_element = random.randint(MIN_STEP, MAX_STEP)
+    length_element = random.randint(MIN_LENGTH, MAX_LENGTH)
     last_element = first_element + ((length_element - 1) * step_element)
     progression = generate_progression(
         first_element, last_element + 1, step_element,

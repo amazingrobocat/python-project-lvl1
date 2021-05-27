@@ -4,8 +4,8 @@ import random
 
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-NUMBER_MIN = 2
-NUMBER_MAX = 200
+MIN_NUMBER = 2
+MAX_NUMBER = 200
 
 
 def launch_game_round():
@@ -15,7 +15,7 @@ def launch_game_round():
         - question for the user
         - correct answer value
     """
-    random_number = random.randint(NUMBER_MIN, NUMBER_MAX)
+    random_number = random.randint(MIN_NUMBER, MAX_NUMBER)
     question = '{0}'.format(random_number)
     correct_answer = 'yes' if is_prime(random_number) else 'no'
     return question, correct_answer
