@@ -17,16 +17,16 @@ def launch_game_round():
     Calculate the correct answer.
 
     Returns:
-        - question for the user
-        - correct answer value
+        question for the user
+        correct answer value
     """
     operators = {'+': operator.add, '-': operator.sub, '*': operator.mul}
     first_num = random.randint(FIRST_MIN_NUMBER, FIRST_MAX_NUMBER)
     second_num = random.randint(SECOND_MIN_NUMBER, SECOND_MAX_NUMBER)
-    expression = random.choice(list(operators.keys()))
+    random_operator = random.choice(list(operators.keys()))
     question = '{0} {1} {2}'.format(
-        first_num, expression, second_num,
+        first_num, random_operator, second_num,
     )
-    correct_answer = operators.get(expression)(first_num, second_num)
+    correct_answer = operators.get(random_operator)(first_num, second_num)
 
     return question, correct_answer

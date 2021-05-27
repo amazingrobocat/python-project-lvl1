@@ -35,8 +35,8 @@ def launch_game_round():
     Calculate correct answer and question for a round of the game.
 
     Returns:
-        question for the user(str)
-        correct answer value(int)
+        - question for the user(str)
+        - correct answer value(int)
     """
     first_element = random.randint(MIN_NUMBER, MAX_NUMBER)
     step_element = random.randint(MIN_STEP, MAX_STEP)
@@ -45,9 +45,9 @@ def launch_game_round():
     progression = generate_progression(
         first_element, last_element + 1, step_element,
     )
-    hidden_element = random.randint(0, len(progression) - 1)
-    correct_answer = progression[hidden_element]
-    progression[hidden_element] = '..'
+    hidden_element_index = random.randint(0, len(progression) - 1)
+    correct_answer = progression[hidden_element_index]
+    progression[hidden_element_index] = '..'
     progression_hidden = ' '.join([str(element) for element in progression])
     question = '{0}'.format(progression_hidden)
     return question, correct_answer

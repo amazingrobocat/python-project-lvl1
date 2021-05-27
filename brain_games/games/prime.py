@@ -15,30 +15,25 @@ def launch_game_round():
         - question for the user
         - correct answer value
     """
-    random_number = random.randint(MIN_NUMBER, MAX_NUMBER)
-    question = '{0}'.format(random_number)
-    correct_answer = 'yes' if is_prime(random_number) else 'no'
+    number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    question = '{0}'.format(number)
+    correct_answer = 'yes' if is_prime(number) else 'no'
     return question, correct_answer
 
 
-def is_prime(random_number):
+def is_prime(any_number):
     """Check number to see if it is prime.
 
     Args:
-        random_number(int): generated number
+        any_number(int): generated number
 
     Returns:
          - False if number is not prime
          - True if number is prime
     """
-    if random_number < 2:
+    if any_number < 2:
         return False
-
-    # Перебор от 2 до random_number//2
-    for num in range(2, random_number // 2):
-
-        # Если random_number делится на любое число
-        # между 2 и random_number//2, то random_number не prime
-        if (random_number % num) == 0:
+    for divider in range(2, any_number // 2):
+        if (any_number % divider) == 0:
             return False
     return True
