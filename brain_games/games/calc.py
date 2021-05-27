@@ -9,31 +9,21 @@ LAST_SECOND_NUM = 10
 RULES = 'What is the result of the expression?'
 
 
-def generate_expression_parts():
-    """Generate math expression with two random numbers and a random operator.
-
-    Returns:
-        - two generated numbers
-        - math expression
-    """
-    operators = {'+': operator.add, '-': operator.sub, '*': operator.mul}
-    first_num = random.randint(INITIAL_FIRST_NUM, LAST_FIRST_NUM)
-    second_num = random.randint(INITIAL_SECOND_NUM, LAST_SECOND_NUM)
-    expression = random.choice(list(operators.keys()))
-    return first_num, second_num, expression, operators
-
-
 def launch_game_round():
-    """Ask the user a question for a round of the game.
+    """Brain-calc game.
 
-    Ask a question to the user.
+    Generate math expression with two random numbers and a random operator.
+    Ask the user a question for a round of the game.
     Calculate the correct answer.
 
     Returns:
         - question for the user
         - correct answer value
     """
-    first_num, second_num, expression, operators = generate_expression_parts()
+    operators = {'+': operator.add, '-': operator.sub, '*': operator.mul}
+    first_num = random.randint(INITIAL_FIRST_NUM, LAST_FIRST_NUM)
+    second_num = random.randint(INITIAL_SECOND_NUM, LAST_SECOND_NUM)
+    expression = random.choice(list(operators.keys()))
     question = '{0} {1} {2}'.format(
         first_num, expression, second_num,
     )
