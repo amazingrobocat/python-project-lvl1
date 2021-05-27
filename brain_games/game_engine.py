@@ -19,7 +19,7 @@ def launch_game(game):
     for _ in range(3):
         question, correct_answer = game.launch_game_round()
 
-        print(question)
+        print('Question: {Q}'.format(Q=question))
         user_answer = prompt.string('Your answer: ')
 
         if user_answer == str(correct_answer):

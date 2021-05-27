@@ -19,6 +19,6 @@ def launch_game_round():
         - correct answer value
     """
     random_number = random.randint(MIN_NUMBER, MAX_NUMBER)
-    question = 'Question: {0}'.format(random_number)
+    question = '{0}'.format(random_number)
     correct_answer = 'yes' if random_number % 2 == 0 else 'no'
     return question, correct_answer

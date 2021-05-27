@@ -44,6 +44,6 @@ def launch_game_round():
         - correct answer value
     """
     first_number, second_number = generate_random_numbers()
-    question = 'Question: {0} {1}'.format(first_number, second_number)
+    question = '{0} {1}'.format(first_number, second_number)
     correct_answer = gcd(first_number, second_number)
     return question, correct_answer

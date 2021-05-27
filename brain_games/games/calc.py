@@ -34,7 +34,7 @@ def launch_game_round():
         - correct answer value
     """
     first_num, second_num, expression, operators = generate_expression_parts()
-    question = 'Question: {0} {1} {2}'.format(
+    question = '{0} {1} {2}'.format(
         first_num, expression, second_num,
     )
     correct_answer = operators.get(expression)(first_num, second_num)
