@@ -1,6 +1,6 @@
 # Brain-games
 ### Hexlet tests, CodeClimate, linter status and style:
-[![Actions Status](https://github.com/amazingrobocat/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/amazingrobocat/python-project-lvl1/actions)[![Maintainability](https://api.codeclimate.com/v1/badges/e28c65bfaab4a394e63e/maintainability)](https://codeclimate.com/github/amazingrobocat/python-project-lvl1/maintainability)[![Linter check](https://github.com/amazingrobocat/python-project-lvl1/actions/workflows/flake8-WPS-check.yml/badge.svg)](https://github.com/amazingrobocat/python-project-lvl1/actions/workflows/flake8-WPS-check.yml)[![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
+[![Actions Status](https://github.com/amazingrobocat/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/amazingrobocat/python-project-lvl1/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/e28c65bfaab4a394e63e/maintainability)](https://codeclimate.com/github/amazingrobocat/python-project-lvl1/maintainability) [![Linter check](https://github.com/amazingrobocat/python-project-lvl1/actions/workflows/flake8-WPS-check.yml/badge.svg)](https://github.com/amazingrobocat/python-project-lvl1/actions/workflows/flake8-WPS-check.yml) [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
 ---
 ### Welcome to the brain-games!
