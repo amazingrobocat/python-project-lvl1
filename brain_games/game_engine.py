@@ -17,7 +17,7 @@ def launch_game(game):
     print('Hello, {name}!\n{R}'.format(name=user_name, R=game.RULES))
 
     for _ in range(3):
-        question, correct_answer = game.launch_game_round()
+        question, correct_answer = game.get_question_and_answer()
 
         print('Question: {Q}'.format(Q=question))
         user_answer = prompt.string('Your answer: ')

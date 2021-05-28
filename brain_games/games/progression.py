@@ -26,7 +26,7 @@ def generate_progression(start, last, step):
     return list(range(start, last, step))
 
 
-def launch_game_round():
+def get_question_and_answer():
     """Round of the Brain-progression game.
 
     Generate random arithmetic parameters of progression.

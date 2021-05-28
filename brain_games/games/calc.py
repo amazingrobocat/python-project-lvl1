@@ -9,7 +9,7 @@ SECOND_MAX_NUMBER = 10
 RULES = 'What is the result of the expression?'
 
 
-def launch_game_round():
+def get_question_and_answer():
     """Brain-calc game.
 
     Generate math expression with two random numbers and a random operator.

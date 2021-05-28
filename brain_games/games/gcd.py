@@ -25,7 +25,7 @@ def gcd(number_one, number_two):
     return number_one
 
 
-def launch_game_round():
+def get_question_and_answer():
     """Round of the Brain-GCD game.
 
     Generate two random numbers.

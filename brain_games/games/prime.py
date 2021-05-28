@@ -8,7 +8,7 @@ MIN_NUMBER = 2
 MAX_NUMBER = 200
 
 
-def launch_game_round():
+def get_question_and_answer():
     """Generate random number that may or may not be prime.
 
     Returns:
