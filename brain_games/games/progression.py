@@ -8,22 +8,23 @@ MIN_NUMBER = 1
 MAX_NUMBER = 15
 MIN_STEP = 2
 MAX_STEP = 5
-MIN_LENGTH = 5
-MAX_LENGTH = 10
+MIN_LENGTH = 6
+MAX_LENGTH = 11
 
 
-def generate_progression(start, last, step):
+def generate_progression(start, length, step):
     """Generate arithmetic progression.
 
     Args:
         start(int): first number in arithmetic progression
-        last(int): last number in arithmetic progression
+        length(int): last number in arithmetic progression
         step(int): step between numbers in arithmetic progression
 
     Returns:
         list of arithmetic progression
     """
-    return list(range(start, last, step))
+    stop = start + ((length - 1) * step)
+    return list(range(start, stop, step))
 
 
 def get_question_and_answer():
@@ -41,13 +42,12 @@ def get_question_and_answer():
     first_element = random.randint(MIN_NUMBER, MAX_NUMBER)
     step_element = random.randint(MIN_STEP, MAX_STEP)
     length_element = random.randint(MIN_LENGTH, MAX_LENGTH)
-    last_element = first_element + ((length_element - 1) * step_element)
     progression = generate_progression(
-        first_element, last_element + 1, step_element,
+        first_element, length_element, step_element,
     )
     hidden_element_index = random.randint(0, len(progression) - 1)
     correct_answer = progression[hidden_element_index]
     progression[hidden_element_index] = '..'
     progression_hidden = ' '.join([str(element) for element in progression])
-    question = '{0}'.format(progression_hidden)
+    question = str(progression_hidden)
     return question, correct_answer

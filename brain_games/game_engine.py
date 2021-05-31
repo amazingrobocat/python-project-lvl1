@@ -2,6 +2,8 @@
 
 import prompt
 
+ROUNDS_COUNT = 3
+
 
 def launch_game(game):
     """Launch game progression.
@@ -16,7 +18,7 @@ def launch_game(game):
 
     print('Hello, {name}!\n{R}'.format(name=user_name, R=game.RULES))
 
-    for _ in range(3):
+    for _ in range(ROUNDS_COUNT):
         question, correct_answer = game.get_question_and_answer()
 
         print('Question: {Q}'.format(Q=question))
