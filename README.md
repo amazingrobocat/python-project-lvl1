@@ -19,20 +19,15 @@ Games:
 
 ---
 ## Quickstart
-
+Local install for development:
 ```
 pip install git+https://github.com/amazingrobocat/python-project-lvl1.git
 ```
-Go to the package directory and run this commands: 
 
+---
+Package install to run games:
 ```
-make install
-```
-```
-make build
-```
-```
-make package-install
+pip install git+git://github.com/amazingrobocat/python-project-lvl1.git#egg=hexlet-code
 ```
 Python version support: 3.6, 3.7, 3.8, 3.9
 
